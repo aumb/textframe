@@ -1,4 +1,6 @@
-<div align="center">
+## THIS IS NOT WORKED ON AND NOT ON THE STORE ANYMORE SINCE GOOGLE RELEASE THEIR *ASK* FEATURE
+
+<div align="center"
   <img src="./textframe.svg" alt="Project Logo" width="200"/>
 </div>
 

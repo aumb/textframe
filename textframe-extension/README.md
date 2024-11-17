@@ -1,8 +1,4 @@
-## THIS PROJECT BEEN ARCHIVED SINCE GOOGLE RELEASE THEIR *ASK* FETURE
-
-# <img src="public/icons/icon_48.png" width="45" align="left"> Textframe
-
-My Chrome Extension
+Textframe
 
 ## Features
 
@@ -18,4 +14,4 @@ This project was bootstrapped with [Chrome Extension CLI](https://github.com/dut
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License - see the [LICENSE](../LICENSE) file for details
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License - see the [LICENSE](../LICENSE) file for details.
