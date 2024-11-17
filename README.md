@@ -1,4 +1,4 @@
-## THIS IS NOT WORKED ON AND NOT ON THE STORE ANYMORE SINCE GOOGLE RELEASE THEIR *ASK* FEATURE
+## THIS PROJECT IS NOT WORKED ON AND NOT ON THE STORE ANYMORE SINCE GOOGLE RELEASED THEIR *ASK* FEATURE
 
 <div align="center"
   <img src="./textframe.svg" alt="Project Logo" width="200"/>
@@ -6,7 +6,7 @@
 
 # Textframe
 
-This monorepo contains a Python FASTAPI backend and a Chrome Extension frontend that work together to find specific moments in YouTube videos based on spoken content (transcript).
+This monorepo contains a Python FastAPI backend and a Chrome Extension frontend that work together to find specific moments in YouTube videos based on spoken content (transcript).
 
 ## 📂 Project Structure
 
