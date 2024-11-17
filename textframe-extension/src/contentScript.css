@@ -1,0 +1,300 @@
+.tf-svg {
+  padding: 8px;
+}
+
+.tf-search-popup {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: transparent;
+  padding: 8px;
+  z-index: 9999;
+  display: none;
+}
+
+.tf-search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tf-search-box {
+  display: flex;
+  align-items: center;
+  background: #121212;
+  border: 1px solid #303030;
+  border-radius: 40px;
+  overflow: hidden;
+  height: 40px;
+  transition: border-color 0.2s;
+}
+
+.tf-search-box:focus-within {
+  border-color: #1c62b9;
+}
+
+.tf-search-input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  height: 100%;
+  outline: none;
+  padding: 0 16px;
+  width: 240px;
+}
+
+.tf-search-input::placeholder {
+  color: #888;
+}
+
+.tf-search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222222;
+  border-left: 1px solid #303030;
+  color: #888;
+  cursor: pointer;
+  height: 100%;
+  padding: 0 20px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tf-search-button:hover {
+  background: #313131;
+  color: #fff;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tf-search-popup.show {
+  display: block;
+  animation: slideDown 0.2s ease-out;
+}
+
+.tf-search-input:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.tf-marker-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 31;
+}
+
+.tf-marker {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: var(--yt-spec-call-to-action, #3ea6ff);
+  cursor: pointer;
+  transform: translateX(-50%);
+  transition: all 0.2s ease;
+  z-index: 32;
+  pointer-events: auto;
+}
+
+.tf-marker::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+  background: transparent;
+  z-index: 31;
+}
+
+.tf-marker:hover {
+  width: 6px;
+  background-color: var(--yt-spec-call-to-action-hover, #65b8ff);
+  transform: translateX(-50%) scaleY(1.2);
+}
+
+.tf-marker::after {
+  content: attr(data-time);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--yt-spec-menu-background, rgba(33, 33, 33, 0.95));
+  color: var(--yt-spec-text-primary, #fff);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: 'YouTube Sans', Roboto, Arial, sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 33;
+}
+
+.tf-marker:hover::after {
+  opacity: 1;
+}
+
+.tf-marker-stacked {
+  background-color: var(--yt-spec-call-to-action, #3ea6ff);
+  opacity: 0.8;
+  width: 6px;
+}
+
+.tf-marker-stacked:hover {
+  width: 8px;
+  opacity: 1;
+  background-color: var(--yt-spec-call-to-action-hover, #65b8ff);
+}
+
+.tf-marker.active {
+  background-color: var(--yt-spec-call-to-action-hover, #65b8ff);
+  width: 6px;
+  transform: translateX(-50%) scaleY(1.2);
+}
+
+.ytp-hover-progress-bar {
+  z-index: 29 !important;
+}
+
+.ytp-preview:hover + .tf-marker-container .tf-marker {
+  z-index: 34;
+}
+
+.tf-nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  height: 100%;
+  padding: 0 8px;
+  transition: color 0.2s;
+}
+
+.tf-nav-button:hover {
+  color: #fff;
+}
+
+.tf-nav-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.tf-close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  height: 100%;
+  padding: 0 12px;
+  transition: color 0.2s;
+}
+
+.tf-close-button:hover {
+  color: #fff;
+}
+
+.tf-close-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Error states */
+.tf-search-input.error {
+  color: #ff6b6b;
+}
+
+.tf-search-input:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.tf-nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #555;
+}
+
+.tf-nav-button:disabled:hover {
+  color: #555;
+}
+
+.tf-loading-spinner {
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+  border: 2px solid #888;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tf-loading .tf-loading-spinner {
+  display: block;
+}
+
+.tf-status-message {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  top: 100%;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  background: #282828;
+  color: #fff;
+  display: none;
+}
+
+.tf-status-message.error {
+  background: #461818;
+  color: #ff6b6b;
+  display: block;
+}
+
+.tf-status-message.empty {
+  background: #282828;
+  color: #aaa;
+  display: block;
+}
+
+.tf-marker {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.tf-marker:hover::after {
+  opacity: 1;
+}

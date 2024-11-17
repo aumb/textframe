@@ -1,0 +1,6 @@
+fastapi[standard]>=0.113.0,<0.114.0
+pydantic>=2.7.0,<3.0.0
+youtube-transcript-api==0.6.2
+google-generativeai==0.8.2
+PyNaCl==1.5.0
+pocketbase==0.12.3
