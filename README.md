@@ -38,7 +38,7 @@ npm install
 
 ## 🔗 Component Documentation
 
-- [Textframe API Documentation](./python-api/README.md)
+- [Textframe API Documentation](./textframe-api/README.md)
 - [Textframe Extension Documentation](./textframe-extension/README.md)
 
 ## 🏗️ Architecture
