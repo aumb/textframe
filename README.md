@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 3. Set up the textframe Extension:
 ```bash
-cd ../textframe-extension
+cd textframe-extension
 npm install
 ```
 
