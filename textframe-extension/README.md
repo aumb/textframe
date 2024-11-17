@@ -18,4 +18,4 @@ This project was bootstrapped with [Chrome Extension CLI](https://github.com/dut
 
 ## License
 
-This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License - see the [LICENSE](../LICENSE) file for details.
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License - see the [LICENSE](../LICENSE) file for details
